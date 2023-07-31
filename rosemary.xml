@@ -5,6 +5,12 @@
    <remote name="lab" fetch="https://gitlab.com"/>
    <remote name="hub" fetch="https://github.com"/>
 
+   <!-- Remove & Add crDroidAndroid -->
+   <remove-project name="frameworks_base" />
+   <remove-project name="packages_apps_Settings" />
+   <project path="frameworks/base" name="mmnnx23/pex_frameworks_base" remote="hub" revision="thunder" clone-depth="1"/>
+   <project path="packages/apps/Settings" name="mmnnx23/pex_packages_apps_Settings" remote="hub" revision="thunder" clone-depth="1"/>
+
    <!-- Trees -->
    <project path="device/xiaomi/rosemary" name="mmnnx23/android_device_xiaomi_rosemary" remote="hub" revision="PixysOS" clone-depth="1"/>
    <project path="kernel/xiaomi/mt6785" name="mmnnx23/android_kernel_xiaomi_mt6785" remote="hub" revision="lineage-20" clone-depth="1"/>
